@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EarthquakePrediction</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string-array name="regions">
+        Select your desired region
+        <item> Kashmir </item>
+        <item> Jhamnagar </item>
+        <item> Patna </item>
+        <item> Delhi </item>
+        <item> Guwahati </item>
+        <item> Meerut </item>
+        <item> Jammu </item>
+        <item> Amritsar </item>
+        <item> Jalandhar </item>
+        <item> Dehradun </item>
+    </string-array>
+</resources>
+

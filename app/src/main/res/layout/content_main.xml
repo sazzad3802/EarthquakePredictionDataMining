@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/bc">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome you to the Earthquake prediction zone"
+            android:textColor="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="center" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/id_spinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_welcome_text"
+            android:gravity="center"
+            app:ms_dropdown_max_height="350dp"
+            app:ms_dropdown_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/id_text_predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_spinner"
+            android:gravity="center"
+            android:text="Let's Predict"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:background="#C70039"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="140dp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <TextView
+            android:layout_below="@+id/id_text_predict"
+            android:id="@+id/testTV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:layout_marginTop="200dp"
+            android:paddingBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/id_optionalText"
+            android:layout_below="@+id/testTV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:textColor="#ffffff" />
+
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
